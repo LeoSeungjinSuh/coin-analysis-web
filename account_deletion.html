@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계정 삭제 요청</title>
+    <style>
+        :root {
+            --primary-color: #ef4444;
+            /* Red for deletion/warning */
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --button-hover: #dc2626;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .warning-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #4b5563;
+        }
+
+        .warning-box {
+            background-color: #fef2f2;
+            border: 1px solid #fee2e2;
+            color: #991b1b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .delete-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .delete-btn:hover {
+            background-color: var(--button-hover);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.875rem;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span class="warning-icon">⚠️</span>
+        <h1>계정 삭제 요청</h1>
+        <p>계정을 삭제하시면 모든 데이터가 영구적으로 삭제되며 복구할 수 없습니다.</p>
+
+        <div class="warning-box">
+            <strong>삭제되는 데이터:</strong>
+            <ul style="margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                <li>프로필 정보 및 계정 설정</li>
+                <li>서비스 이용 기록 및 활동 내역</li>
+                <li>저장된 모든 콘텐츠</li>
+            </ul>
+        </div>
+
+        <p>계정 삭제를 원하시면 아래 버튼을 클릭하여 이메일을 보내주세요.<br>담당자가 확인 후 24시간 이내에 처리를 도와드립니다.</p>
+
+        <a href="mailto:support@example.com?subject=계정 삭제 요청&body=계정 삭제를 요청합니다.%0D%0A%0D%0A1. 계정 이메일: %0D%0A2. 삭제 사유 (선택사항): "
+            class="delete-btn">
+            계정 삭제 요청 메일 보내기
+        </a>
+
+        <div class="footer">
+            <p>또는 support@example.com으로 직접 문의해주시기 바랍니다.</p>
+        </div>
+    </div>
+</body>
+
+</html>
